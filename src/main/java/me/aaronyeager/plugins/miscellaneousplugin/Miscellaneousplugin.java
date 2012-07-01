@@ -16,20 +16,22 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitScheduler;
 
 public class Miscellaneousplugin extends JavaPlugin implements Listener{
     
-    public static JavaPlugin plugin = null;
+    //public static JavaPlugin plugin = null;
     private static final Logger log = Logger.getLogger("Minecraft");
     EntityDamageByEntityEvent damageevent;
     MonsterApocalypseRunnable MRRunnable;
-    private int period = 20;
+    private long MRperiod = 20*60*10;//*150; //every 2 hours and 40 minutes (8 minecraft days)
     Player player = null;
     Random random = new Random();
     private int taskID;
+    Plugin monsterApocalypsePlugin;
     //Logger log = Logger.getLogger("Minecraft");//DEBUG CODE
     
     @Override
@@ -42,6 +44,13 @@ public class Miscellaneousplugin extends JavaPlugin implements Listener{
     public void onEnable() {
         
         getServer().getPluginManager().registerEvents(this, this);
+        MRRunnable = new MonsterApocalypseRunnable(this);
+        monsterApocalypsePlugin = this.getServer().getPluginManager().getPlugin("Monster Apocalypse");
+        if(monsterApocalypsePlugin != null)
+        {
+            this.getServer().getPluginManager().disablePlugin(monsterApocalypsePlugin);
+            this.scheduleMR();
+        }
         System.out.println(this + " is now enabled!");
     }
     
@@ -75,11 +84,17 @@ public class Miscellaneousplugin extends JavaPlugin implements Listener{
        }
     }
     
-	public void schedule()
+	public void scheduleMR()
         {
-		BukkitScheduler scheduler = this.plugin.getServer().getScheduler();
-		this.taskID = scheduler.scheduleSyncRepeatingTask(this.plugin, MRRunnable, 0, this.period);
+		BukkitScheduler scheduler = this.getServer().getScheduler();
+		
+                this.taskID = scheduler.scheduleSyncRepeatingTask(this, MRRunnable, 0, this.MRperiod);
 		if(this.taskID == -1){
+			this.log(Level.WARNING, "failed to schedule!");
+		}
+                
+                this.taskID = scheduler.scheduleSyncRepeatingTask(this, MRRunnable, 0, this.MRperiod + 20*60*7);
+		 if(this.taskID == -1){
 			this.log(Level.WARNING, "failed to schedule!");
 		}
 	}

@@ -6,5 +6,5 @@ name: MiscellaneousPlugin
 startup: postworld
 softdepend: 
   - MultiWorld
-  - MonsterApocalypse
+  - Monster Apocalypse
 version: '1.0'
