@@ -1,0 +1,10 @@
+author: Aaron Yeager
+database: false
+generator: http://dinnerbone.com/minecraft/tools/pluginator/
+main: me.aaronyeager.plugins.miscellaneousplugin.Miscellaneousplugin
+name: MiscellaneousPlugin
+startup: postworld
+softdepend: 
+  - MultiWorld
+  - MonsterApocalypse
+version: '1.0'
