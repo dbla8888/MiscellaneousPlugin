@@ -1,0 +1,950 @@
+Worlds:
+- world
+Always night: true
+Nightmare mode multiplier: 1.0
+Nightmare mode period: 1200000
+Nightmare mode exponential?: true
+Use new event system?: true
+Check for the deaggro permission for entity attacks, shooting super arrows, and mega-aggro?: false
+Enable natural hostile spawns?: true
+Enable natural passive spawns?: true
+Enable spawn points?: false
+Enable bonus spawns?: true
+Enable naturalistic bonus spawns?: true
+Hard cap on all mobs spawning: 1000000
+Only enable bonus spawns on one world?: false
+'Bonus spawn world name:': world
+Only enable naturalistic bonus spawns on one selected world?: false
+Naturalistic bonus spawn world name: world
+Enable worldguard spawn flag checks?: false
+Spawn individual wave mobs in the same spot?: false
+Enable bonus spawns midair? (Useful for Ghasts): false
+Enable custom monster health?: false
+Enable custom monster damage?: false
+Enable worldguard damage flag checks?: false
+Enable Ender Dragons destroying blocks?: false
+Enable Endermen picking blocks?: true
+Enable custom monster explosion properties? (Normal Creeper/Ghast): false
+Enable spawning changes?: true
+Enable custom monster drops?: false
+Enable monsters destroying nearby torches?: false
+Enable monsters attacking from a massive range?: true
+Mega-aggro range: 160
+Mega-aggro range Y: 80
+Enable Zombies attacking walls?: true
+Enable PigZombies attacking walls?: false
+Drop the block item when a Zombie destroys it?: false
+Enable worldguard 'enderman-grief' flag checks for all monster block operations?: false
+Enable zombies piling up corpses when they can't reach players or attack a block sooner?: true
+Actually kill the zombie when it corpse piles?: false
+Mininum unreaching time before suicide piling: 30
+Block to use for corpse piling: GRAVEL
+Make wolves aggressive?: false
+Make zombie pigmen aggressive?: false
+Make zombie pigmen use mega-aggro?: false
+Enable worldguard creeper explosion flag check for creepers, ghasts, and death explosions?: false
+Check block spawn blacklist (deny spawn on these blocks)?: false
+Invert block spawn list? (Make whitelist): false
+Enable all other monster properties?: false
+Bonus monsters per player: 4
+Percent chance of spawning a monster in bonus waves: 100.0
+Minimum light level to spawn: 0
+Maximum light level to spawn: 7
+Minimum bonus spawn distance: 24
+Maximum bonus spawn distance: 80
+Bonus spawn Y offset: 0
+Bonus spawn period: 60000
+Naturalistic bonus spawn mob attempts per tick: 10
+Number of mobs to spawn in a spot if found: 1
+Tick period for bonus natural spawns, increase this to drastically slow spawning: 1
+Minimum naturalistic bonus spawn distance: 24
+Maximum naturalistic bonus spawn distance: 160
+Minimum light level to spawn naturalistic bonus: 0
+Maximum light level to spawn naturalistic bonus: 7
+Minimum Y for naturalistic bonus: 0
+Maximum Y for naturalistic bonus: 255
+Automatically remove mobs who spawn inside blocks?: false
+Bonus Spawns:
+  Creeper:
+    spawn: false
+    chance: 100.0
+  Enderman:
+    spawn: false
+    chance: 100.0
+  Skeleton:
+    spawn: true
+    chance: 100.0
+  Spider:
+    spawn: false
+    chance: 100.0
+  Zombie:
+    spawn: true
+    chance: 100.0
+  Blaze:
+    spawn: false
+    chance: 100.0
+  CaveSpider:
+    spawn: false
+    chance: 100.0
+  Chicken:
+    spawn: false
+    chance: 100.0
+  Cow:
+    spawn: false
+    chance: 100.0
+  EnderDragon:
+    spawn: false
+    chance: 100.0
+  Ghast:
+    spawn: false
+    chance: 100.0
+  Giant:
+    spawn: false
+    chance: 100.0
+  IronGolem:
+    spawn: false
+    chance: 100.0
+  MagmaCube:
+    spawn: false
+    chance: 100.0
+  MushroomCow:
+    spawn: false
+    chance: 100.0
+  Ocelot:
+    spawn: false
+    chance: 100.0
+  Pig:
+    spawn: false
+    chance: 100.0
+  PigZombie:
+    spawn: false
+    chance: 100.0
+  Sheep:
+    spawn: false
+    chance: 100.0
+  Silverfish:
+    spawn: false
+    chance: 100.0
+  Slime:
+    spawn: false
+    chance: 100.0
+  Squid:
+    spawn: false
+    chance: 100.0
+  Villager:
+    spawn: false
+    chance: 100.0
+  Wolf:
+    spawn: false
+    chance: 100.0
+Naturalistic Bonus Spawns:
+  Creeper:
+    spawn: true
+    chance: 100.0
+  Enderman:
+    spawn: true
+    chance: 100.0
+  Skeleton:
+    spawn: true
+    chance: 100.0
+  Spider:
+    spawn: true
+    chance: 100.0
+  Zombie:
+    spawn: true
+    chance: 100.0
+  Blaze:
+    spawn: false
+    chance: 100.0
+  CaveSpider:
+    spawn: false
+    chance: 100.0
+  Chicken:
+    spawn: false
+    chance: 100.0
+  Cow:
+    spawn: false
+    chance: 100.0
+  EnderDragon:
+    spawn: false
+    chance: 100.0
+  Ghast:
+    spawn: false
+    chance: 100.0
+  Giant:
+    spawn: false
+    chance: 100.0
+  IronGolem:
+    spawn: false
+    chance: 100.0
+  MagmaCube:
+    spawn: false
+    chance: 100.0
+  MushroomCow:
+    spawn: false
+    chance: 100.0
+  Ocelot:
+    spawn: false
+    chance: 100.0
+  Pig:
+    spawn: false
+    chance: 100.0
+  PigZombie:
+    spawn: false
+    chance: 100.0
+  Sheep:
+    spawn: false
+    chance: 100.0
+  Silverfish:
+    spawn: false
+    chance: 100.0
+  Slime:
+    spawn: false
+    chance: 100.0
+  Squid:
+    spawn: false
+    chance: 100.0
+  Villager:
+    spawn: false
+    chance: 100.0
+  Wolf:
+    spawn: false
+    chance: 100.0
+Monster Properties:
+  Blaze:
+    health: 20
+    damage: 5
+  CaveSpider:
+    health: 20
+    damage: 2
+  Chicken:
+    health: 4
+    damage: 0
+  Cow:
+    health: 10
+    damage: 0
+  Creeper:
+    health: 20
+    damage: 0
+    standard explosion radius: 3.0
+    standard fire: false
+  EnderDragon:
+    health: 200
+    damage: 10
+  Enderman:
+    health: 40
+    damage: 7
+    burns in sunlight: true
+  Ghast:
+    health: 10
+    damage: 0
+    standard explosion radius: 1.0
+    standard fire: true
+  Giant:
+    health: 100
+    damage: 17
+  IronGolem:
+    health: 100
+    damage: 14
+  MushroomCow:
+    health: 10
+    damage: 0
+  Ocelot:
+    health: 10
+    damage: 0
+  Pig:
+    health: 10
+    damage: 0
+  PigZombie:
+    health: 20
+    damage: 5
+  Sheep:
+    health: 8
+    damage: 0
+  Silverfish:
+    health: 8
+    damage: 1
+  Skeleton:
+    health: 20
+    damage: 4
+    burns in sunlight: true
+  Spider:
+    health: 16
+    damage: 2
+  Squid:
+    health: 10
+    damage: 0
+  Villager:
+    health: 20
+    damage: 0
+  Zombie:
+    health: 20
+    damage: 4
+    burns in sunlight: true
+Advanced Monster Properties:
+  Blaze:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: Blaze
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+  CaveSpider:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: CaveSpider
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+  Chicken:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: Chicken
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+  Cow:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: Cow
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+  Creeper:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: Creeper
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+    Mass aggro run speed: 1.0
+  EnderDragon:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: EnderDragon
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+  Enderman:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: Enderman
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+  Ghast:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: Ghast
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+  Giant:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: Giant
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+  IronGolem:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: VillagerGolem
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+  MushroomCow:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: MushroomCow
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+  Ocelot:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: Ozelot
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+  Pig:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: Pig
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+  PigZombie:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: PigZombie
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+  Sheep:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: Sheep
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+  Silverfish:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: Silverfish
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+  Skeleton:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: Skeleton
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+    Enable Super Arrows: false
+    Super Arrow period: 5000
+    Super Arrow chance: 100.0
+    Super Arrow X/Z attack range: 20.0
+    Super Arrow Y attack range: 80
+    Make skeleton arrows explode?: false
+    Arrow explosion radius: 2.0
+    Arrow chance to explode on collision: 100.0
+    Arrow explosion causes fire?: false
+    Mass aggro run speed: 1.0
+  Spider:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: Spider
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+  Squid:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: Squid
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+  Villager:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: Villager
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+  Zombie:
+    true damage (completely ignores armor): 0
+    explode on death: false
+    death explosion causes fire?: false
+    death explosion radius: 1.0
+    spawn new mob on death: false
+    death spawn type: Zombie
+    death spawn count: 1
+    death spawn chance: 100.0
+    Immunities:
+      cactus: false
+      drowning: false
+      attacks: false
+      explosions: false
+      falling: false
+      fire: false
+      lava: false
+      projectiles: false
+    Use the new zombie destruction method, with block hp?: true
+    Attackable blocks:
+    - CACTUS:5
+    - CLAY:5
+    - DIRT:5
+    - GLASS:3
+    - GRASS:5
+    - GRAVEL:5
+    - ICE:5
+    - LEAVES:2
+    - LOG:10
+    - MYCEL:5
+    - SAND:5
+    - SNOW:5
+    - SOIL:5
+    - SOUL_SAND:5
+    - THIN_GLASS:3
+    - WOOD:10
+    - WOOD_STAIRS:10
+    - WOODEN_DOOR:15
+    - WOOL:10
+    Mass aggro run speed: 1.0
+Natural:
+  Creeper:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: Creeper
+  Enderman:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: Enderman
+  Skeleton:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: Skeleton
+  Zombie:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: Zombie
+  Blaze:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: Blaze
+  CaveSpider:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: CaveSpider
+  Chicken:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: Chicken
+  Cow:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: Cow
+  Ghast:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: Ghast
+  IronGolem:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: VillagerGolem
+  Ocelot:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: Ozelot
+  MagmaCube:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: LavaSlime
+  MushroomCow:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: MushroomCow
+  Pig:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: Pig
+  PigZombie:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: PigZombie
+  Sheep:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: Sheep
+  Silverfish:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: Silverfish
+  Slime:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: Slime
+  Spider:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: Spider
+  Squid:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: Squid
+  Villager:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: Villager
+  Wolf:
+    spawn: true
+    spawncount: 1
+    spawnchance: 100.0
+    spawnymin: 1
+    spawnymax: 255
+    replacement: Wolf
+Drops:
+  Creeper:
+    drops:
+    - item:count:chance
+    - item:count:chance
+    Overwrite?: false
+  Enderman:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  Skeleton:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  Spider:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  Zombie:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  Blaze:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  CaveSpider:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  Chicken:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  Cow:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  EnderDragon:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  Ghast:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  Giant:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  IronGolem:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  MagmaCube:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  MushroomCow:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  Ocelot:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  Pig:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  PigZombie:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  Sheep:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  Silverfish:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  Slime:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  Squid:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  Villager:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+  Wolf:
+    drops:
+    - item:count:chance
+    Overwrite?: false
+Spawn Block Blacklist:
+- block
