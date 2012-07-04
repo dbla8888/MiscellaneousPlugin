@@ -1,8 +1,10 @@
 package me.aaronyeager.plugins.miscellaneousplugin;
 
+import java.util.List;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.bukkit.World;
 import org.bukkit.entity.Animals;
 import org.bukkit.entity.CreatureType;
 import org.bukkit.entity.EnderDragon;
@@ -13,7 +15,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.entity.Wolf;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
@@ -26,10 +27,11 @@ public class Miscellaneousplugin extends JavaPlugin implements Listener{
     private static final Logger logger = Logger.getLogger("Minecraft");
     private MonsterApocalypseRunnable MRRunnable;
     //every 2 hours and 40 minutes (8 minecraft days)
-    private long MARperiod = 20*60*10;//*160; 
+    private long MARperiod = 20*60*160; 
     Random random = new Random();
     private int taskID;
     Plugin monsterApocalypsePlugin;
+    List<World> worlds;
 
     /**
      * onEnable is called on server startup at a stage specified in the
@@ -54,6 +56,15 @@ public class Miscellaneousplugin extends JavaPlugin implements Listener{
             this.getServer().getPluginManager().disablePlugin(monsterApocalypsePlugin);
             this.scheduleMAR();
         }
+        
+        //set the time in the game world to morning on startup, so things
+        //transition nicely
+        worlds = this.getServer().getWorlds();
+        for(World world : worlds)
+             {
+                 world.setTime(0000);
+             }
+        
         System.out.println(this + " is now enabled!");
     }
     

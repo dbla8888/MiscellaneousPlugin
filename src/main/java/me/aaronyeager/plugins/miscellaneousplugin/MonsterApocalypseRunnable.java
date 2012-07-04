@@ -39,7 +39,7 @@ public class MonsterApocalypseRunnable implements Runnable {
             //over when the plugin disables
              for(World world : worlds)
              {
-                 world.setTime(6000);
+                 world.setTime(23500);
              }
              
         }else
@@ -54,7 +54,7 @@ public class MonsterApocalypseRunnable implements Runnable {
             for(World world : worlds)
              {
                  //make it nighttime
-                 world.setTime(18000);
+                 world.setTime(12000);
                  
                  //remove all creepers in the world before the event starts,
                  //because lets not be rediculous.
